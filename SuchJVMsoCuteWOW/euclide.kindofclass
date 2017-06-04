@@ -1,0 +1,37 @@
+0: psh 50
+1: st 1
+2: psh 130
+3: st 2
+4: psh 0
+5: st 0
+6: ld 1
+7: psh 0
+8: ne
+9: ld 2
+10: psh 0
+11: ne
+12: and
+13: ifez 32
+14: ld 1
+15: ld 2
+16: gt
+17: ifez 24
+18: ld 1
+19: ld 2
+20: mod
+21: st 1
+22: ld 1
+23: jmp 29
+24: ld 2
+25: ld 1
+26: mod
+27: st 2
+28: ld 2
+29: psh 1
+30: st 0
+31: jmp 6
+32: ld 1
+33: ld 2
+34: add
+35: prnt
+36: rtrn
